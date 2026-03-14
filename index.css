@@ -5,51 +5,56 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/* NAVBAR */
+/* Navbar */
 
 .navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 5vw;
+    padding:2vh 5vw;
 }
 
 .logo{
-    font-size:24px;
+    display:inline-block;
     font-weight:bold;
+    font-size:20px;
+}
+
+.menu{
+    display:flex;
+    gap:20px;
 }
 
 .menu a{
-    margin:0 15px;
+    margin-right:20px;
     text-decoration:none;
     color:#555;
-    font-size:16px;
 }
 
 .user{
+    float:right;
     background:#e6f2ff;
     padding:8px 15px;
     border-radius:10px;
-    color:#1e90ff;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 
 .hero{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:8vh 8vw;
+    padding:10vh 10vw;
 }
 
-/* LEFT TEXT */
+/* left content */
 
 .left{
     width:45%;
 }
 
 .left h1{
-    font-size:42px;
+    font-size:40px;
     color:#4b5d67;
 }
 
@@ -60,38 +65,35 @@
 .left p{
     margin-top:15px;
     color:#777;
-    line-height:1.5;
 }
 
 .left button{
     margin-top:25px;
-    padding:14px 28px;
+    padding:12px 25px;
     border:none;
     background:#1e90ff;
     color:white;
-    border-radius:25px;
-    font-size:16px;
+    border-radius:10px;
     cursor:pointer;
 }
 
-/* RIGHT IMAGE */
+/* right image */
 
 .right{
     width:45%;
+    margin-left:5%;
 }
 
 .right img{
     width:100%;
 }
 
-/* -------------------- */
-/* TABLET VIEW */
-/* -------------------- */
+/* Tablet View (≤ 900px) */
 
 @media (max-width:900px){
 
 .logo{
-    font-size:20px;
+    font-size:18px;
 }
 
 .menu a{
@@ -106,19 +108,13 @@
     font-size:32px;
 }
 
-.left p{
-    font-size:14px;
-}
-
 .right img{
     width:90%;
 }
 
 }
 
-/* -------------------- */
-/* MOBILE VIEW */
-/* -------------------- */
+/* Mobile View (≤ 600px) */
 
 @media (max-width:600px){
 
@@ -142,10 +138,6 @@
 
 .left h1{
     font-size:28px;
-}
-
-.left p{
-    font-size:14px;
 }
 
 .right img{
